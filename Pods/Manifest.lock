@@ -1,0 +1,24 @@
+PODS:
+  - ActionSheetPicker-3.0 (1.5.1)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 1.5.1)
+  - MMDrawerController (~> 0.5.7)
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: de0f71e30495ed0192f7d16d0fddcab6882a0ca3
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+
+COCOAPODS: 0.38.0.beta.2

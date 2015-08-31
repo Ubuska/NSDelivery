@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AboutUs</key>
+	<string>https://test.inuwa.ru/xml/aboutdata.xml</string>
+	<key>Discounts</key>
+	<string>https://test.inuwa.ru/xml/discountdata.xml</string>
+	<key>Bonuses</key>
+	<string>https://test.inuwa.ru/xml/bonusesdata.xml</string>
+	<key>Products</key>
+	<string>https://test.inuwa.ru/xml/productdata.xml</string>
+	<key>Events</key>
+	<string>https://test.inuwa.ru/xml/eventsdata.xml</string>
+	<key>Places</key>
+	<string>https://test.inuwa.ru/xml/restarauntdata.xml</string>
+	<key>Info</key>
+	<string>https://test.inuwa.ru/xml/infodata.xml</string>
+	<key>Token</key>
+	<string>https://test.inuwa.ru/blocks/add.php</string>
+	<key>ServerRequest</key>
+	<string>https://test.inuwa.ru/blocks/get.php</string>
+</dict>
+</plist>
