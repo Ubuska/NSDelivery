@@ -24,6 +24,7 @@
 @interface IMProductViewController : UITableViewController <UpdateControllerView>
 {
     UIActivityIndicatorView *Spinner;
+    int SelectedIndex;
 }
 
 

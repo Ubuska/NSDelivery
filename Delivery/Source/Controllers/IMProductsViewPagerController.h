@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "Protocols.h"
 
 @interface IMProductsViewPagerController: UIViewController <UIPageViewControllerDataSource>
 
 @property (nonatomic, strong) UIPageViewController* PageViewController;
 
+@property (nonatomic, weak) id <UpdateControllerView> delegate;
 
 @end

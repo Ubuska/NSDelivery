@@ -16,6 +16,7 @@
 #import "IMSectionManager.h"
 #import "IMProductManager.h"
 #import "IMProductParser.h"
+#import "ViewController.h"
 #import "Protocols.h"
 
 
@@ -524,6 +525,7 @@ IMAppDelegate *appDelegate;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    SelectedIndex = indexPath.row;
     if (indexPath.section == 0)
     {
         Section* CurrentActiveSection = [SectionManager GetActiveSection];
@@ -533,6 +535,13 @@ IMAppDelegate *appDelegate;
         [SectionManager SetActiveSection:NewActiveSection];
         [self SectionPressed];
     }
+    else
+    {
+        [self performSegueWithIdentifier:@"DetailSegue" sender:self];
+    }
+
+
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -764,11 +773,13 @@ IMAppDelegate *appDelegate;
             
             NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
             IMProduct* DesiredProduct = (IMProduct*)[[SectionManager GetActiveSection] GetChildByIndex:indexPath.row];
-            UIViewController* DestViewController = segue.destinationViewController;
-            //DestViewController.ParentUpdateDelegate = self;
-            IMProductDetailController* DetailController = (IMProductDetailController*) DestViewController;
+            ViewController* DestViewController = segue.destinationViewController;
+            DestViewController.PageUpdateDelegate = self;
+            DestViewController.PageIndex = SelectedIndex;
+            DestViewController.Products = [SectionManager FilterChildrenByType:[SectionManager GetActiveSection] FilterClass:[IMProduct class]];
+            //IMProductDetailController* DetailController = (IMProductDetailController*) DestViewController;
             //DetailController.MasterViewDelegate = self;
-            DetailController.DetailItem = DesiredProduct;
+            //DestViewController.DetailItem = DesiredProduct;
             
         }
     

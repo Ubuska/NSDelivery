@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PageItemController.h"
 #import "IMProductViewController.h"
 #import "IMFormViewController.h"
 #import "IMProductsViewPagerController.h"
 #import "IMAppDelegate.h"
 #import "Protocols.h"
 
-@interface IMProductDetailPageController : UIViewController <UpdateControllerView, DetailView>
+@interface IMProductDetailPageController : PageItemController <UpdateControllerView, DetailView>
 {
     IMProduct* CurrentProduct;
     UIBarButtonItem *BonusCartButton;
@@ -37,6 +38,8 @@
 @property (nonatomic, weak) id <UpdateControllerView> delegate;
 
 @property IBOutlet UIScrollView* ScrollView;
+
+@property ViewController* Parent;
 
 - (void) CreateCartButton;
 

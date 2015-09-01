@@ -69,12 +69,10 @@
 
 - (void)configureView
 {
-    //_Parent.PageUpdateDelegate = self;
+    _Parent.PageUpdateDelegate = self;
     AppDelegate = [[UIApplication sharedApplication] delegate];
     
-    Section* CurrentSection = [[IMSectionManager SharedInstance] GetActiveSection];
-    NSMutableArray* Products = [[IMSectionManager SharedInstance] FilterChildrenByType:CurrentSection FilterClass:[IMProduct class]];
-   // if (!CurrentProduct) CurrentProduct = Products[self.ItemIndex];
+    CurrentProduct = DetailItem;
     
     // Update the user interface for the detail item.
     
@@ -149,7 +147,7 @@
     }
     [self UpdateStepperValue];
     [self UpdateView];
-    //[_delegate UpdateView];
+    [_delegate UpdateView];
 }
 
 - (void) UpdateView

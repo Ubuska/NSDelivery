@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -521,10 +521,10 @@
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="1000" minY="0.0" maxX="1000" maxY="0.0"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="b96-oa-nbR">
-                            <rect key="frame" x="0.0" y="64" width="320" height="68"/>
+                            <rect key="frame" x="0.0" y="64" width="320" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ознакомительная версия приложения, покупки в этой версии невозможны" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-28-aaz" customClass="IMText">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ознакомительная версия приложения, покупки в этой версии невозможны" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkT-28-aaz" customClass="IMText">
                                     <rect key="frame" x="8" y="8" width="304" height="52"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -540,7 +540,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="gray" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="jWA-nG-zhl" customClass="IMProductViewCell">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="jWA-nG-zhl" customClass="IMProductViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="96"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jWA-nG-zhl" id="UQZ-Hn-AX0" userLabel="Product Cell" colorLabel="IBBuiltInLabel-Red">
@@ -587,7 +587,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <view hidden="YES" opaque="NO" tag="128" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OhI-2t-M3L">
+                                        <view hidden="YES" opaque="NO" tag="128" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhI-2t-M3L">
                                             <rect key="frame" x="218" y="6" width="94" height="95"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2z-Ug-2Hd">
@@ -636,7 +636,6 @@
                                     <outlet property="description" destination="OiC-Hq-yvx" id="hXK-gZ-mxm"/>
                                     <outlet property="image" destination="VxF-TD-rDE" id="tNB-wY-j36"/>
                                     <outlet property="name" destination="5hh-Vq-aLz" id="wf2-Zt-WdL"/>
-                                    <segue destination="Pfu-Fq-mt0" kind="push" identifier="DetailSegue" trigger="accessoryAction" id="EVR-6Q-NYI"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="SectionCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SectionCell" rowHeight="48" id="Mwk-we-dFF" customClass="IMSectionViewCell">
@@ -690,6 +689,7 @@
                         <outlet property="ButtonCart" destination="9Rc-k6-hPf" id="BMc-lt-mcR"/>
                         <outlet property="MoneySum" destination="9Rc-k6-hPf" id="aLP-oi-tDv"/>
                         <outlet property="tableView" destination="qDh-Vd-y8Y" id="lWH-4X-cH1"/>
+                        <segue destination="9VC-Bo-W2T" kind="push" identifier="DetailSegue" id="c1r-Sg-f6E"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MjH-Ff-hO1" sceneMemberID="firstResponder"/>
@@ -1418,7 +1418,47 @@
                 <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="5no-yQ-DnS" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTw-zy-d0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="-899"/>
+            <point key="canvasLocation" x="1848" y="-894"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jqa-q4-ROg">
+            <objects>
+                <viewController modalPresentationStyle="pageSheet" id="9VC-Bo-W2T" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NWV-DR-FYB"/>
+                        <viewControllerLayoutGuide type="bottom" id="49J-5e-luU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BcC-Bn-EoD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.023529414089999999" green="0.023529414089999999" blue="0.023529414089999999" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U7y-PQ-Iq5">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="26R-I0-HM2"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="Ddh-nF-lBy">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="100" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p3E-2V-cWV">
+                                <rect key="frame" x="154" y="-42" width="200" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Корзина"/>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnCartTransition:" destination="9VC-Bo-W2T" eventType="touchUpInside" id="WD1-Yv-f4F"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ButtonCart" destination="p3E-2V-cWV" id="gGa-fd-NKk"/>
+                        <outlet property="view" destination="BcC-Bn-EoD" id="bMf-it-tHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CP6-tv-ESW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357" y="-58"/>
         </scene>
         <!--Product Detail Page Controller-->
         <scene sceneID="jXU-aY-jsJ">

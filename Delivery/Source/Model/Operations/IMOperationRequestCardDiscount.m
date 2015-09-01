@@ -13,10 +13,15 @@
 
 - (void)main
 {
+    NSString* UserPhone = [Tools GetUserPhoneNumber];
+    if (UserPhone)
+    {
     Params = [[NSDictionary alloc] initWithObjectsAndKeys:
               @"query", @"discount",
-              @"phone", [Tools GetUserPhoneNumber],
+              @"phone", UserPhone,
               @"application", @"1",nil];
+    }
+    
     [super main];
 }
 

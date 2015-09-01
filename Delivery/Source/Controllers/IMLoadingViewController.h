@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Protocols.h"
 
-@interface IMLoadingViewController : UIViewController <UpdateProgress>
+@interface IMLoadingViewController : UIViewController <UpdateProgress, OperationNotifyReceiver>
 
 @property IBOutlet UIActivityIndicatorView* Spinner;
 @property IBOutlet UIProgressView* ProgressBar;

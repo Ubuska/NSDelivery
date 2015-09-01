@@ -11,6 +11,7 @@
 #import "IMCartManager.h"
 #import "IMProductManager.h"
 #import "IMProductDetailPageController.h"
+#import "ViewController.h"
 #import "IMAppDelegate.h"
 
 @implementation IMBonusDetailsViewController

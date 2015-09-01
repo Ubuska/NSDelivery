@@ -17,22 +17,17 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-
     [self CreatePageViewController];
     [self SetupPageControl];
 }
 
-
-
 - (void) CreatePageViewController
 {
-    
     UIPageViewController *pageController = [self.storyboard instantiateViewControllerWithIdentifier: @"PageController"];
     pageController.dataSource = self;
     
     Section* CurrentSection = [[IMSectionManager SharedInstance] GetActiveSection];
     NSMutableArray* Products = [[IMSectionManager SharedInstance] FilterChildrenByType:CurrentSection FilterClass:[IMProduct class]];
-    
     
     if([Products count])
     {
@@ -51,7 +46,6 @@
 
 - (void) SetupPageControl
 {
-    
     [[UIPageControl appearance] setPageIndicatorTintColor: [UIColor grayColor]];
     [[UIPageControl appearance] setCurrentPageIndicatorTintColor: [UIColor blackColor]];
     [[UIPageControl appearance] setBackgroundColor: [UIColor darkGrayColor]];
